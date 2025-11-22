@@ -67,8 +67,8 @@ const Footer = () => {
                         <h1 className='text-2xl font-bold'>{footerLinks.title}</h1>
                         <div className='mt-4 flex flex-col gap-3 text-black-base text-xl'>
                             {
-                                footerLinks.links.map((link, idx) => <Link to={link.path}>
-                                    <li className='list-none hover:text-gray-400' key={idx}>
+                                footerLinks.links.map((link, idx) => <Link  key={idx} to={link.path}>
+                                    <li className='list-none hover:text-gray-400'>
                                         {link.name}
                                     </li>
                                 </Link>)
@@ -79,8 +79,8 @@ const Footer = () => {
                         <h1 className='text-2xl font-bold'>{contactLinks.title}</h1>
                         <div className='mt-4 flex flex-col gap-3 text-black-base text-xl'>
                             {
-                                contactLinks.items.map((item,idx) => <Link>
-                                    <li className='list-none flex items-center gap-3' key={idx}>
+                                contactLinks.items.map((item,idx) => <Link key={idx}>
+                                    <li className='list-none flex items-center gap-3'>
                                         <span className='text-xl text-white'>{item.icon}</span> <span className='hover:text-gray-400'>{item.name}</span>
                                     </li>
                                 </Link>)

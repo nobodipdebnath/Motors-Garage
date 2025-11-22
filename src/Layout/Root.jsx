@@ -6,7 +6,9 @@ import NavBar from '../Shared/NavBar';
 const Root = () => {
     return (
         <div>
-            <NavBar></NavBar>
+            <div className='absolute  left-0 top-10 px-[4%] right-0'>
+                <NavBar></NavBar>
+            </div>
             <Outlet></Outlet>
             <Footer></Footer>
         </div>
