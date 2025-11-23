@@ -5,7 +5,7 @@ import Title from '../Shared/Title';
 const SpecialPage = () => {
     return (
         <div>
-            <Hero image={"/src/assets/images/about.jpg"} title={" Special Deals, Just for You"} description={"Get exclusive discounts on repairs and maintenance. Our specials help you save while keeping your car in top shape."}></Hero>
+            <Hero image={"https://i.ibb.co.com/7xQycwVt/about.jpg"} title={" Special Deals, Just for You"} description={"Get exclusive discounts on repairs and maintenance. Our specials help you save while keeping your car in top shape."}></Hero>
             <div className='my-30'>
                 <Title description={"From routine check-ups to extensive repairs, find exclusive offers that fit your needs. Book your service today!"} subTitle={"Current Specials & Offers"}></Title>
                 <div className='mt-12 mx-[7%] grid grid-cols-3 gap-9'>

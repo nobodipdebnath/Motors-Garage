@@ -9,7 +9,7 @@ import Hero from "../Shared/Hero";
 const HomePage = () => {
   return (
     <div>
-        <Hero title={"Honesty. Quality. Care. That's What Drives Us."} description={"At our shop, every repair starts with transparency and ends with satisfaction. We believe in honest diagnostics,fair pricing, and top-notch craftsmanshipl"} home={true} image={"/src/assets/images/home.png"}></Hero>
+        <Hero title={"Honesty. Quality. Care. That's What Drives Us."} description={"At our shop, every repair starts with transparency and ends with satisfaction. We believe in honest diagnostics,fair pricing, and top-notch craftsmanshipl"} home={true} image={"https://i.ibb.co.com/HD0Ffvr1/home.png"}></Hero>
         <Facilities></Facilities>
         <Choice></Choice>
         <Services></Services>

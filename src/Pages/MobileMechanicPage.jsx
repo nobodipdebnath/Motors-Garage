@@ -6,7 +6,7 @@ import Service from '../components/Service/Service';
 const MobileMechanicPage = () => {
     return (
         <div>
-            <Hero title={"Why Choose Our  Mobile Mechanic Service?"} description={"Whether you're at home, work, or stuck on the roadside, our certified mobile mechanics come to you. We offer diagnostics and full repairs on-site, providing fast, reliable, and hassle-free service."} image={"/src/assets/images/blog.jpg"}></Hero>
+            <Hero title={"Why Choose Our  Mobile Mechanic Service?"} description={"Whether you're at home, work, or stuck on the roadside, our certified mobile mechanics come to you. We offer diagnostics and full repairs on-site, providing fast, reliable, and hassle-free service."} image={"https://i.ibb.co.com/ZpDV4nXq/blog.jpg"}></Hero>
             <div className='mx-[7%] grid grid-cols-3 gap-10 my-30'>
                 <div className='col-span-2'>
                     <Service></Service>
