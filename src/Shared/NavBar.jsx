@@ -5,6 +5,8 @@ const NavBar = () => {
     const links =<>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/about'>About</NavLink></li>
+        <li><NavLink to='/blog'>Blog</NavLink></li>
+        <li><NavLink to='/contact'>Contact</NavLink></li>
     </>
     return (
         <nav className='flex justify-between items-center'>
