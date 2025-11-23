@@ -5,6 +5,7 @@ import AboutPage from "../Pages/AboutPage";
 import BlogPage from "../Pages/BlogPage";
 import ContactPage from "../Pages/ContactPage";
 import FinancingPage from "../Pages/FinancingPage";
+import MobileMechanicPage from "../Pages/MobileMechanicPage";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path: 'financing',
                 Component: FinancingPage
+            },
+            {
+                path: 'mobileMechanic',
+                Component: MobileMechanicPage
             }
         ]
     }
