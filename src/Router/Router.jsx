@@ -22,31 +22,31 @@ const router = createBrowserRouter([
                 Component: HomePage
             },
             {
-                path:'about',
+                path:'/about',
                 Component: AboutPage
             },
             {
-                path: 'blog',
+                path: '/blog',
                 Component: BlogPage
             },
             {
-                path: 'contact',
+                path: '/contact',
                 Component: ContactPage
             },
             {
-                path: 'financing',
+                path: '/financing',
                 Component: FinancingPage
             },
             {
-                path: 'mobileMechanic',
+                path: '/mobileMechanic',
                 Component: MobileMechanicPage
             },
             {
-                path: 'bodyPaint',
+                path: '/bodyPaint',
                 Component: BodyPaint
             },
             {
-                path: 'shop',
+                path: '/shop',
                 Component: ShopRe
             },
             {
@@ -58,7 +58,7 @@ const router = createBrowserRouter([
                 Component: SpecialPage
             },
             {
-                path: 'learnMore/:id',
+                path: '/learnMore/:id',
                 Component: LearnMorePage
             }
         ]
