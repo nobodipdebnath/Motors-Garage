@@ -1,12 +1,15 @@
 import logo from '../assets/images/logo2.png'
 import { NavLink } from 'react-router';
+import { useModal } from '../ModalContext/ModalContext';
 
 const NavBar = () => {
+    const { openModal } = useModal();
     const links =<>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/about'>About</NavLink></li>
         <li><NavLink to='/blog'>Blog</NavLink></li>
         <li><NavLink to='/contact'>Contact</NavLink></li>
+        <li><NavLink to='/financing'>Financing</NavLink></li>
     </>
     return (
         <nav className='flex justify-between items-center'>
@@ -17,7 +20,7 @@ const NavBar = () => {
                 {links}
             </ul>
             <div>
-                <button className='common-btn'>Book Appointment</button>
+                <button  onClick={openModal} className='common-btn'>Book Appointment</button>
             </div>
         </nav>
     );

@@ -6,6 +6,7 @@ import { Link } from 'react-router';
 import logo from '../assets/images/logo.png'
 import { MdOutlineMail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import { useModal } from '../ModalContext/ModalContext';
 
 const footerLinks = {
   "title": "Quick Actions",
@@ -35,6 +36,7 @@ const contactLinks = {
 
 
 const Footer = () => {
+    const { openModal } = useModal();
     return (
         <footer className='p-20 m-5 bg-primary-black rounded-2xl'>
             <div className='p-8 bg-black-base rounded-3xl flex items-center justify-between'>
@@ -43,7 +45,7 @@ const Footer = () => {
                     <p className='text-white text-base mt-2'>Schedule your next service today and experience the difference of <br />professional auto care</p>
                 </div>
                 <div>
-                    <button className='py-3 px-5 bg-white font-semibold text-base rounded-lg cursor-pointer hover:bg-red-primary duration-500 hover:text-white'>Book Appointment</button>
+                    <button onClick={openModal} className='py-3 px-5 bg-white font-semibold text-base rounded-lg cursor-pointer hover:bg-red-primary duration-500 hover:text-white'>Book Appointment</button>
                 </div>
             </div>
             <div className='flex justify-between mt-20'>
