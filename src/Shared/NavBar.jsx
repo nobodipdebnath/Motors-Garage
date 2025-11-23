@@ -61,15 +61,15 @@ const { openModal } = useModal();
                 </button>
                 
                 <div className="absolute left-0 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
-                  <div className="bg-white rounded-lg shadow-xl py-2 border border-gray-200">
-                    <NavLink>
-                        <p className="block px-4 py-3 text-black text-lg  hover:text-red-600 transition-colors cursor-pointer">In Shop Repairs</p>
+                  <div className="bg-white flex flex-col items-center rounded-lg shadow-xl py-2 border border-gray-200">
+                    <NavLink to='/about'>
+                        <p className="block px-4 py-3 text-black text-lg  hover:text-red-600 transition-colors cursor-pointer">About</p>
                     </NavLink>
-                    <NavLink>
-                        <p className="block px-4 py-3 text-black text-lg  hover:text-red-600 transition-colors cursor-pointer">In Shop Repairs</p>
+                    <NavLink to='/directions'>
+                        <p className="block px-4 py-3 text-black text-lg  hover:text-red-600 transition-colors cursor-pointer">Directions</p>
                     </NavLink>
-                    <NavLink>
-                        <p className="block px-4 py-3 text-black text-lg  hover:text-red-600 transition-colors cursor-pointer">In Shop Repairs</p>
+                    <NavLink to='/special'>
+                        <p className="block px-4 py-3 text-black text-lg  hover:text-red-600 transition-colors cursor-pointer">Special</p>
                     </NavLink>
                   </div>
                 </div>

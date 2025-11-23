@@ -8,6 +8,8 @@ import FinancingPage from "../Pages/FinancingPage";
 import MobileMechanicPage from "../Pages/MobileMechanicPage";
 import BodyPaint from "../Pages/BodyPaint";
 import ShopRe from "../Pages/ShopRe";
+import DirectionsPage from "../Pages/DirectionsPage";
+import SpecialPage from "../Pages/SpecialPage";
 
 const router = createBrowserRouter([
     {
@@ -45,6 +47,14 @@ const router = createBrowserRouter([
             {
                 path: 'shop',
                 Component: ShopRe
+            },
+            {
+                path: 'directions',
+                Component: DirectionsPage
+            },
+            {
+                path: 'special',
+                Component: SpecialPage
             }
         ]
     }

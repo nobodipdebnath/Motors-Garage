@@ -7,7 +7,7 @@ const ShopRe = () => {
     return (
         <div>
             <Hero image={"/src/assets/images/shop.jpg"}></Hero>
-            <div className='mx-[7%] grid grid-cols-3 gap-10'>
+            <div className='mx-[7%] grid grid-cols-3 my-30 gap-10'>
                 <div className='col-span-2'>
                     <Shop></Shop>
                 </div>
