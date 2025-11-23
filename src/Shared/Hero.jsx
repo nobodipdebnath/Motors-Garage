@@ -10,7 +10,7 @@ const Hero = ({title, description, image, home}) => {
                     <h1 className='text-white text-7xl font-bold leading-[120%]'>{title}</h1>
                     <p className='text-2xl text-[#E9E9E9] my-6'>{description}</p>
                     <button className='common-btn'>Book Appointment</button>
-                </div> : <div className='flex h-screen max-w-5xl mx-auto items-center justify-center flex-col'>
+                </div> : <div className='flex h-screen max-w-6xl mx-auto items-center justify-center flex-col'>
                     <h1 className='text-white text-5xl font-bold leading-[120%]'>{title}</h1>
                     <p className='text-2xl text-center text-[#E9E9E9] my-6'>{description}</p>
                 </div>

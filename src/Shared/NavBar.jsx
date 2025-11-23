@@ -42,10 +42,10 @@ const { openModal } = useModal();
                     <NavLink to='/mobileMechanic'>
                         <p className="block px-4 py-3 text-black text-lg  hover:text-red-600 transition-colors cursor-pointer">Mobile Mechanic</p>
                     </NavLink>
-                    <NavLink>
+                    <NavLink to='/bodyPaint'>
                         <p className="block px-4 py-3 text-black text-lg  hover:text-red-600 transition-colors cursor-pointer">Paint And Body</p>
                     </NavLink>
-                    <NavLink>
+                    <NavLink to='/shop'>
                         <p className="block px-4 py-3 text-black text-lg  hover:text-red-600 transition-colors cursor-pointer">In Shop Repairs</p>
                     </NavLink>
                   </div>
