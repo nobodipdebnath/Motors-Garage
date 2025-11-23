@@ -11,11 +11,15 @@ import ShopRe from "../Pages/ShopRe";
 import DirectionsPage from "../Pages/DirectionsPage";
 import SpecialPage from "../Pages/SpecialPage";
 import LearnMorePage from "../Pages/LearnMorePage";
+import ErrorPage from "../Shared/ErrorPage";
+import Loader from "../Shared/Loader";
 
 const router = createBrowserRouter([
     {
         path: '/',
         Component: Root,
+        errorElement: <ErrorPage></ErrorPage>,
+        hydrateFallbackElement: <Loader></Loader>,
         children: [
             {
                 index: true,
@@ -50,17 +54,17 @@ const router = createBrowserRouter([
                 Component: ShopRe
             },
             {
-                path: 'directions',
+                path: '/directions',
                 Component: DirectionsPage
             },
             {
-                path: 'special',
+                path: '/special',
                 Component: SpecialPage
             },
             {
                 path: '/learnMore/:id',
                 Component: LearnMorePage
-            }
+            },
         ]
     }
 ])

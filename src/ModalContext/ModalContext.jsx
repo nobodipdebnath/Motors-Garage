@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from "react";
 import Navbar from "../Shared/NavBar";
+import { MdClose } from "react-icons/md";
 
 const ModalContext = createContext();
 export const useModal = () => useContext(ModalContext);
@@ -20,12 +21,15 @@ export const ModalProvider = ({ children }) => {
           onClick={closeModal}
         >
           <div
-            className="bg-white max-h-[90vh] overflow-y-auto p-8 rounded-xl shadow-xl lg:w-1/2 w-[90%]"
+            className="bg-white relative max-h-[90vh] overflow-y-auto p-8 rounded-xl shadow-xl lg:w-1/2 w-[90%]"
             onClick={(e) => e.stopPropagation()}
             >
             <div>
                 <h2 className="text-center font-bold text-4xl text-[#292929] mb-4">Book an Appointment</h2>
                 <p className="text-center text-black-base text-lg">Schedule your service online and get real-time updates via ShopMonkey. We'll confirm your appointment shortly.</p>
+            </div>
+            <div className="absolute top-3 right-3 cursor-pointer hover:bg-red-secondary hover:text-white duration-500 p-3 border rounded-full" onClick={closeModal}>
+                <MdClose className="text-3xl"></MdClose>
             </div>
 
             <form className="flex flex-col mt-8 gap-4">

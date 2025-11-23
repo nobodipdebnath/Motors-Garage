@@ -1,33 +1,34 @@
 import React, { useState } from 'react';
-import {Menu, X } from 'lucide-react';
 import { useModal } from '../ModalContext/ModalContext';
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/logo.png';
 import { Link, NavLink } from 'react-router';
+import { FaBars } from "react-icons/fa";
+import { MdClose } from "react-icons/md";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-const { openModal } = useModal();
+  const { openModal } = useModal();
 
   return (
     <>
       <nav className="text-white relative">
         <div className="">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
+          <div className="flex mr-[7%] md:mr-0 items-center justify-between">
             <Link to='/' className="flex items-center">
               <img className='h-15 object-cover' src={logo} alt="" />
             </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <NavLink href="/" className="hover:text-red-400 transition-colors">Home</NavLink>
-              
+              <NavLink to="/" className="hover:text-red-400 transition-colors">Home</NavLink>
+
               <div className="relative group">
                 <NavLink to='/financing' className="flex items-center space-x-1 hover:text-red-400 transition-colors">
                   <span>Financing</span>
                 </NavLink>
               </div>
 
+              {/* Services Dropdown */}
               <div className="relative group">
                 <button className="flex items-center space-x-1 hover:text-red-400 transition-colors">
                   <span>Services</span>
@@ -36,22 +37,22 @@ const { openModal } = useModal();
                   </svg>
                 </button>
                 
-                {/* Dropdown Menu */}
                 <div className="absolute left-0 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
                   <div className="bg-white flex flex-col items-center rounded-lg shadow-xl py-2 border border-gray-200">
                     <NavLink to='/mobileMechanic'>
-                        <p className="block px-4 py-3 text-black text-lg  hover:text-red-600 transition-colors cursor-pointer">Mobile Mechanic</p>
+                      <p className="block px-4 py-3 text-black text-lg hover:text-red-600 transition-colors cursor-pointer">Mobile Mechanic</p>
                     </NavLink>
                     <NavLink to='/bodyPaint'>
-                        <p className="block px-4 py-3 text-black text-lg  hover:text-red-600 transition-colors cursor-pointer">Paint And Body</p>
+                      <p className="block px-4 py-3 text-black text-lg hover:text-red-600 transition-colors cursor-pointer">Paint And Body</p>
                     </NavLink>
                     <NavLink to='/shop'>
-                        <p className="block px-4 py-3 text-black text-lg  hover:text-red-600 transition-colors cursor-pointer">In Shop Repairs</p>
+                      <p className="block px-4 py-3 text-black text-lg hover:text-red-600 transition-colors cursor-pointer">In Shop Repairs</p>
                     </NavLink>
                   </div>
                 </div>
               </div>
 
+              {/* About Dropdown */}
               <div className="relative group">
                 <button className="flex items-center space-x-1 hover:text-red-400 transition-colors">
                   <span>About Us</span>
@@ -63,13 +64,13 @@ const { openModal } = useModal();
                 <div className="absolute left-0 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
                   <div className="bg-white flex flex-col items-center rounded-lg shadow-xl py-2 border border-gray-200">
                     <NavLink to='/about'>
-                        <p className="block px-4 py-3 text-black text-lg  hover:text-red-600 transition-colors cursor-pointer">About</p>
+                      <p className="block px-4 py-3 text-black text-lg hover:text-red-600 transition-colors cursor-pointer">About</p>
                     </NavLink>
                     <NavLink to='/directions'>
-                        <p className="block px-4 py-3 text-black text-lg  hover:text-red-600 transition-colors cursor-pointer">Directions</p>
+                      <p className="block px-4 py-3 text-black text-lg hover:text-red-600 transition-colors cursor-pointer">Directions</p>
                     </NavLink>
                     <NavLink to='/special'>
-                        <p className="block px-4 py-3 text-black text-lg  hover:text-red-600 transition-colors cursor-pointer">Special</p>
+                      <p className="block px-4 py-3 text-black text-lg hover:text-red-600 transition-colors cursor-pointer">Special</p>
                     </NavLink>
                   </div>
                 </div>
@@ -85,43 +86,50 @@ const { openModal } = useModal();
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden mr-10">
+            <div className="md:hidden -mt-3">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-white hover:text-red-400 transition-colors cursor-pointer"
-              >
-                {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+                className="text-white hover:text-red-400 cursor-pointer">
+                {mobileMenuOpen ?  "" : <FaBars className='text-3xl'/>}
               </button>
             </div>
           </div>
         </div>
 
         {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden  mx-[7%] bg-gray-800 border-t border-gray-700">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="/" className="block px-3 py-2 hover:bg-gray-700 rounded-md">Home</a>
-              <a href="#" className="block px-3 py-2 hover:bg-gray-700 rounded-md">Financing</a>
-              
-              <div className="pl-4 space-y-1">
-                <a href="#" className="block px-3 py-2 hover:bg-gray-700 rounded-md text-gray-300">Mobile Mechanic</a>
-                <a href="#" className="block px-3 py-2 hover:bg-gray-700 rounded-md text-gray-300">Paint And Body</a>
-                <a href="#" className="block px-3 py-2 hover:bg-gray-700 rounded-md text-gray-300">In Shop Repairs</a>
-              </div>
+        <div 
+          className={`fixed top-0 right-0 h-full w-64 bg-white z-50 p-6 shadow-xl transform transition-transform duration-300 ${
+            mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          {/* Close Button */}
+          <button 
+            onClick={() => setMobileMenuOpen(false)} 
+            className="absolute top-4 right-4 text-xl text-black"
+          >
+            <MdClose className='text-3xl' />
+          </button>
 
-              <div className="pl-4 space-y-1">
-                <a href="#" className="block px-3 py-2 hover:bg-gray-700 rounded-md text-gray-300">Specials</a>
-                <a href="#" className="block px-3 py-2 hover:bg-gray-700 rounded-md text-gray-300">Directions</a>
-              </div>
+          <ul className="mt-10 space-y-6 text-black font-semibold text-lg">
+            <li><NavLink to="/" onClick={() => setMobileMenuOpen(false)}>Home</NavLink></li>
+            <li><NavLink to="/financing" onClick={() => setMobileMenuOpen(false)}>Financing</NavLink></li>
+            <li><NavLink to="/mobileMechanic" onClick={() => setMobileMenuOpen(false)}>Mobile Mechanic</NavLink></li>
+            <li><NavLink to="/bodyPaint" onClick={() => setMobileMenuOpen(false)}>Paint & Body</NavLink></li>
+            <li><NavLink to="/shop" onClick={() => setMobileMenuOpen(false)}>In Shop Repairs</NavLink></li>
+            <li><NavLink to="/about" onClick={() => setMobileMenuOpen(false)}>About</NavLink></li>
+            <li><NavLink to="/directions" onClick={() => setMobileMenuOpen(false)}>Directions</NavLink></li>
+            <li><NavLink to="/special" onClick={() => setMobileMenuOpen(false)}>Special</NavLink></li>
+            <li><NavLink to="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</NavLink></li>
+            <li><NavLink to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</NavLink></li>
+          </ul>
 
-              <a href="#" className="block px-3 py-2 hover:bg-gray-700 rounded-md">Blog</a>
-              <a href="#" className="block px-3 py-2 hover:bg-gray-700 rounded-md">Contact</a>
-              <a href="#" className="block px-3 py-4 bg-red-600 hover:bg-red-700 rounded-md mx-3 text-center font-semibold">
-                Book Appointment
-              </a>
-            </div>
-          </div>
-        )}
+          <button 
+            onClick={() => { openModal(); setMobileMenuOpen(false); }}
+            className="mt-10 w-full bg-red-600 text-white py-3 rounded-lg font-semibold"
+          >
+            Book Appointment
+          </button>
+        </div>
       </nav>
     </>
   );
