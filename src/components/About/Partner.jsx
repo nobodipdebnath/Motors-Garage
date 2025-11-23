@@ -4,12 +4,12 @@ import Marquee from 'react-fast-marquee';
 
 const Partner = () => {
     const partners = [
-        {id: 1, image: "/src/assets/images/partner.png"},
-        {id: 2, image: "/src/assets/images/partner2.png"},
-        {id: 3, image: "/src/assets/images/partner3.png"},
-        {id: 4, image: "/src/assets/images/partner4.png"},
-        {id: 5, image: "/src/assets/images/partner5.png"},
-        {id: 6, image: "/src/assets/images/patner1.png"},
+        {id: 1, image: "../../assets/images/partner.png"},
+        {id: 2, image: "../../assets/images/partner2.png"},
+        {id: 3, image: "../../assets/images/partner3.png"},
+        {id: 4, image: "../../assets/images/partner4.png"},
+        {id: 5, image: "../../assets/images/partner5.png"},
+        {id: 6, image: "../../assets/images/patner1.png"},
     ]
     return (
         <div className='mt-[120px] mb-20'>

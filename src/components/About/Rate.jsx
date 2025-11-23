@@ -4,22 +4,22 @@ const Rate = () => {
   const rates = [
     {
       name: "25+",
-      image: "/src/assets/images/rate.png",
+      image: "https://i.ibb.co.com/602c6vrT/rate.png",
       description: "Certified Technicians",
     },
     {
       name: "98%",
-      image: "/src/assets/images/rate1.png",
+      image: "https://i.ibb.co.com/XZMc2L5d/rate1.png",
       description: "Satisfaction Rate",
     },
     {
       name: "4.7",
-      image: "/src/assets/images/rate2.png",
+      image: "https://i.ibb.co.com/fYFM8Zn1/rate2.png",
       description: "Overall Customer Rating by google ",
     },
     {
       name: "10+",
-      image: "/src/assets/images/rate4.png",
+      image: "https://i.ibb.co.com/0RTS5Cqm/rate4.png",
       description: "Years of Experiences",
     },
   ];

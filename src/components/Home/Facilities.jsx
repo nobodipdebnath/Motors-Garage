@@ -1,12 +1,12 @@
 import React from 'react';
 
 const facilities = [
-    {image: "/src/assets/images/wifi.png", name: "Free wi-Fi"},
-    {image: "/src/assets/images/fainance.png", name: "Financing Available"},
-    {image: "/src/assets/images/location.png", name: "Free LocalShuttle"},
-    {image: "/src/assets/images/snak.png", name: "Beverage & Snacks"},
-    {image: "/src/assets/images/weation.png", name: "Waiting Room"},
-    {image: "/src/assets/images/tv.png", name: "Tv Screen"},
+    {image: "https://i.ibb.co.com/MxfCcQ2Q/wifi.png", name: "Free wi-Fi"},
+    {image: "https://i.ibb.co.com/dwqNsVjs/fainance.png", name: "Financing Available"},
+    {image: "https://i.ibb.co.com/v4DLywNK/location.png", name: "Free LocalShuttle"},
+    {image: "https://i.ibb.co.com/kVfjFT2d/snak.png", name: "Beverage & Snacks"},
+    {image: "https://i.ibb.co.com/fVNpPKdM/weation.png", name: "Waiting Room"},
+    {image: "https://i.ibb.co.com/xxQrqfz/tv.png", name: "Tv Screen"},
 ]
 const Facilities = () => {
     return (
