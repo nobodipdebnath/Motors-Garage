@@ -10,6 +10,7 @@ import BodyPaint from "../Pages/BodyPaint";
 import ShopRe from "../Pages/ShopRe";
 import DirectionsPage from "../Pages/DirectionsPage";
 import SpecialPage from "../Pages/SpecialPage";
+import LearnMorePage from "../Pages/LearnMorePage";
 
 const router = createBrowserRouter([
     {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
             {
                 path: 'special',
                 Component: SpecialPage
+            },
+            {
+                path: 'learnMore/:id',
+                Component: LearnMorePage
             }
         ]
     }

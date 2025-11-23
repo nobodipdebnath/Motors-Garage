@@ -85,7 +85,7 @@ const { openModal } = useModal();
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden">
+            <div className="md:hidden mr-10">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="text-white hover:text-red-400 transition-colors"
@@ -98,7 +98,7 @@ const { openModal } = useModal();
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-gray-800 border-t border-gray-700">
+          <div className="md:hidden z-50 bg-gray-800 border-t border-gray-700">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <a href="/" className="block px-3 py-2 hover:bg-gray-700 rounded-md">Home</a>
               <a href="#" className="block px-3 py-2 hover:bg-gray-700 rounded-md">Financing</a>

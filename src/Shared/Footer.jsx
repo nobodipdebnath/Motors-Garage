@@ -38,17 +38,17 @@ const contactLinks = {
 const Footer = () => {
     const { openModal } = useModal();
     return (
-        <footer className='p-20 m-5 bg-primary-black rounded-2xl'>
-            <div className='p-8 bg-black-base rounded-3xl flex items-center justify-between'>
+        <footer className='lg:p-20 p-5 m-5 bg-primary-black rounded-2xl'>
+            <div className='p-8 bg-black-base rounded-3xl lg:flex-row flex-col flex items-center justify-between'>
                 <div>
-                    <h2 className='text-white font-bold text-3xl'>Your Car Deserves the Best Care</h2>
-                    <p className='text-white text-base mt-2'>Schedule your next service today and experience the difference of <br />professional auto care</p>
+                    <h2 className='text-white font-bold text-3xl text-center lg:text-start'>Your Car Deserves the Best Care</h2>
+                    <p className='text-white text-center lg:text-start text-base mt-2'>Schedule your next service today and experience the difference of <br />professional auto care</p>
                 </div>
-                <div>
+                <div className='mt-6 md:mt-0'>
                     <button onClick={openModal} className='py-3 px-5 bg-white font-semibold text-base rounded-lg cursor-pointer hover:bg-red-primary duration-500 hover:text-white'>Book Appointment</button>
                 </div>
             </div>
-            <div className='flex justify-between mt-20'>
+            <div className='flex flex-col lg:flex-row justify-between mt-20'>
                 <div className='max-w-[400px]'>
                     <Link to={'/'}><img className='h-12 w-auto' src={logo} alt="not found" /></Link>
                     <p className='text-white text-base my-6'>Your trusted partner for professional auto repair services. Quality workmanship and honest pricing since 2010.</p>
@@ -64,7 +64,7 @@ const Footer = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='flex gap-6'>
+                <div className='flex flex-col lg:flex-row gap-6'>
                     <div className='text-white'>
                         <h1 className='text-2xl font-bold'>{footerLinks.title}</h1>
                         <div className='mt-4 flex flex-col gap-3 text-black-base text-xl'>

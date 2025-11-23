@@ -1,7 +1,9 @@
 import React from 'react';
 import maintenance from '../../assets/images/Maintenance.jpg'
+import { useModal } from '../../ModalContext/ModalContext';
 
 const Maintenance = () => {
+    const {openModal} = useModal();
     return (
         <div className='grid grid-cols-2 gap-20 items-center mx-[5%] mb-[120px]'>
             <div>
@@ -31,7 +33,7 @@ const Maintenance = () => {
                     </div>
                 </div>
                 <div>
-                    <button className='common-btn mt-10'>Explore Services</button>
+                    <button onClick={openModal} className='common-btn mt-10'> Book Appointment</button>
                 </div>
             </div>
         </div>

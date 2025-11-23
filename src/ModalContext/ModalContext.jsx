@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from "react";
+import Navbar from "../Shared/NavBar";
 
 const ModalContext = createContext();
 export const useModal = () => useContext(ModalContext);
@@ -8,6 +9,7 @@ export const ModalProvider = ({ children }) => {
 
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
+
 
   return (
     <ModalContext.Provider value={{ openModal, closeModal }}>

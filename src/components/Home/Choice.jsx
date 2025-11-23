@@ -27,7 +27,7 @@ const Choice = () => {
     return (
         <div>
             <Title title={" Why Choose Us"} subTitle={"Your Go-To Auto Care Buddy"} description={"From routine maintenance to complex repairs, we've got you covered with expert service and transparent pricing."}></Title>
-            <div className='mt-12 grid grid-cols-3 gap-6 mx-[7%] mb-28'>
+            <div className='mt-12 grid lg:grid-cols-3 gap-6 mx-[7%] mb-28'>
                 {
                     choices.map((choice, idx) => <ChoiceCard key={idx} choice={choice}></ChoiceCard>)
                 }

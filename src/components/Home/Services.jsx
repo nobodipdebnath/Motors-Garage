@@ -33,13 +33,13 @@ const Services = () => {
                 </div>
                 <p className='text-lg text-[#4A5565]'>From routine maintenance to complex repairs, we've got you covered with expert <br /> service and transparent pricing.</p>
             </div>
-            <div className='grid grid-cols-3 gap-5 mt-12 px-[7%]'>
+            <div className='grid lg:grid-cols-3 gap-5 mt-12 px-[7%]'>
                 {
                     firstServicer.map(service => <ServiceCard key={service.id} service={service}></ServiceCard>)
                 }
             </div>
             <Collapse isOpened={isOpen}>
-                <div className='grid grid-cols-3 gap-5 mt-5 px-[7%]'>
+                <div className='grid lg:grid-cols-3 gap-5 mt-5 px-[7%]'>
                 {
                     secondServices.map(service => <ServiceCard key={service.id} service={service}></ServiceCard>)
                 }

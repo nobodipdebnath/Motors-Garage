@@ -10,7 +10,7 @@ const facilities = [
 ]
 const Facilities = () => {
     return (
-        <div className='grid grid-cols-6 py-10 bg-[#F9F9F9] my-[120px]'>
+        <div className='grid md:grid-cols-3 lg:grid-cols-6 py-10 bg-[#F9F9F9] my-[120px]'>
             {
                 facilities.map((card, idx) => <div className='flex flex-col justify-center items-center  border-l-2 border-dashed border-gray-300' key={idx}>
                     <img src={card.image} alt="" />
