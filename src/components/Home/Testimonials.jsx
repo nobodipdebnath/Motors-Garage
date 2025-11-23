@@ -8,7 +8,7 @@ const Testimonials = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("users.json").then((res) => setUsers(res.data));
+    axios.get("/users.json").then((res) => setUsers(res.data));
   }, []);
   const newUser = users.slice(0, 10);
   const newUser2 = users.slice(10, 20);
