@@ -4,7 +4,7 @@ import { useModal } from '../../ModalContext/ModalContext';
 const ServiceDetails = () => {
     const{openModal} = useModal();
     return (
-        <div className='p-8 bg-[#1A1A1A08] flex flex-col gap-6 rounded-2xl'>
+        <div className='md:p-8 p-4 bg-[#1A1A1A08] flex flex-col gap-6 rounded-2xl'>
             <h1 className='text-[40px] font-bold text-black-accent'>Service Details</h1>
             <hr className='text-[#E2E2E2]' />
             <button onClick={openModal} className='common-btn'>Book Appointment</button>

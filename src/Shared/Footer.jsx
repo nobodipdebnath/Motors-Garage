@@ -38,7 +38,7 @@ const contactLinks = {
 const Footer = () => {
     const { openModal } = useModal();
     return (
-        <footer className='lg:p-20 p-5 m-5 bg-primary-black rounded-2xl'>
+        <footer className='lg:p-20 p-5 m-3 md:m-5 bg-primary-black rounded-2xl'>
             <div className='p-8 bg-black-base rounded-3xl lg:flex-row flex-col flex items-center justify-between'>
                 <div>
                     <h2 className='text-white font-bold text-3xl text-center lg:text-start'>Your Car Deserves the Best Care</h2>
@@ -50,9 +50,9 @@ const Footer = () => {
             </div>
             <div className='flex flex-col lg:flex-row justify-between mt-20'>
                 <div className='max-w-[400px]'>
-                    <Link to={'/'}><img className='h-12 w-auto' src={logo} alt="not found" /></Link>
-                    <p className='text-white text-base my-6'>Your trusted partner for professional auto repair services. Quality workmanship and honest pricing since 2010.</p>
-                    <div className='flex items-center gap-4 text-xl'>
+                    <Link className='flex justify-center md:justify-start' to={'/'}><img className='h-12 w-auto' src={logo} alt="not found" /></Link>
+                    <p className='text-white text-center md:text-start text-base my-6'>Your trusted partner for professional auto repair services. Quality workmanship and honest pricing since 2010.</p>
+                    <div className='flex justify-center md:justify-start items-center gap-4 text-xl'>
                         <Link className=' p-3 bg-black-base rounded-full'>
                             <FaFacebook className=' text-white'></FaFacebook>
                         </Link>
@@ -64,7 +64,7 @@ const Footer = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='flex flex-col lg:flex-row gap-6'>
+                <div className='flex flex-col mt-5 md:mt-0 lg:flex-row gap-6'>
                     <div className='text-white'>
                         <h1 className='text-2xl font-bold'>{footerLinks.title}</h1>
                         <div className='mt-4 flex flex-col gap-3 text-black-base text-xl'>

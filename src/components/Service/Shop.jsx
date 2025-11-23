@@ -12,8 +12,8 @@ const Shop = () => {
         {id: 7, text: "Warranty registration and documentation"}
     ]
     return (
-        <div className='p-10 rounded-2xl bg-[#1A1A1A08]'>
-            <h1 className='text-5xl font-bold text-black-accent'>In Shop Repairs </h1>
+        <div className='md:p-10 p-4 rounded-2xl bg-[#1A1A1A08]'>
+            <h1 className='md:text-5xl text-4xl text-center md:text-start font-bold text-black-accent'>In Shop Repairs </h1>
             <p className='text-lg text-black-base mt-4.5'>A reliable battery is crucial for starting your car and powering all its gadgets. We’ll check the battery’s health, the charging system, and any electrical draws to ensure a smooth start. If you need a replacement, we’ll provide a top-notch battery with a nationwide warranty!</p>
             <div className='mt-8'>
                 <h2 className='text-3xl text-black-accent font-bold'>what Included</h2>

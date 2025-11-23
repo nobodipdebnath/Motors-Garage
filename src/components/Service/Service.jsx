@@ -33,8 +33,8 @@ const Service = () => {
 
     return (
         <div className='p-10 bg-[#1A1A1A08] rounded-2xl'>
-            <p className='text-5xl text-black-accent font-bold'>Mobile Mechanic Service  </p>
-            <p className='text-xl text-black-base mt-4.5'>We know your time is valuable. That’s why we’ve made car repair easy and convenient. Our mobile mechanics are experienced, insured, and deliver trustworthy, clear, and top-notch service right at your location.</p>
+            <p className='md:text-5xl text-3xl text-center md:text-start text-black-accent font-bold'>Mobile Mechanic Service  </p>
+            <p className='text-xl text-center md:text-start text-black-base mt-4.5'>We know your time is valuable. That’s why we’ve made car repair easy and convenient. Our mobile mechanics are experienced, insured, and deliver trustworthy, clear, and top-notch service right at your location.</p>
             <div className='mt-8'>
                 <h2 className='text-3xl text-black-accent font-bold'>What’s Included in Our Service</h2>
                 <div className='flex flex-col gap-3 mt-4.5'>

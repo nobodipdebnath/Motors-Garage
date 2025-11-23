@@ -25,14 +25,14 @@ const Rate = () => {
   ];
   return (
     <div className="py-6 bg-[#F9F9F9]">
-      <div className="grid grid-cols-4 items-center px-[10%]">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 items-center px-[10%]">
         {rates.map((rate, idx) => (
           <div key={idx}>
             <div
-              className={`flex flex-col items-center justify-center border-dashed ${
+              className={`flex mt-10 md:mt-0 flex-col items-center justify-center md:border-dashed ${
                 idx === rates.length - 1
                   ? "" 
-                  : "border-r-2 border-[#B7BCC6]" 
+                  : "md:border-r-2 border-[#B7BCC6]" 
               }`}
             >
               <img
@@ -53,3 +53,4 @@ const Rate = () => {
 };
 
 export default Rate;
+ 

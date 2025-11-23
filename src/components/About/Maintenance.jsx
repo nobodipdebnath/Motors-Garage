@@ -5,12 +5,12 @@ import { useModal } from '../../ModalContext/ModalContext';
 const Maintenance = () => {
     const {openModal} = useModal();
     return (
-        <div className='grid grid-cols-2 gap-20 items-center mx-[5%] mb-[120px]'>
+        <div className='grid md:grid-cols-2 gap-20 items-center mx-[5%] mb-[120px]'>
             <div>
                 <img className='w-full object-cover rounded-xl' src={maintenance} alt="" />
             </div>
             <div>
-                <h1 className='text-5xl font-bold text-black-accent leading-[120%]'>Your Trusted Partner in Vehicle Care & Maintenance</h1>
+                <h1 className='md:text-5xl text-4xl text-center md:text-start font-bold text-black-accent leading-[120%]'>Your Trusted Partner in Vehicle Care & Maintenance</h1>
                 <div className='flex mt-8 items-center gap-6'>
                     <div className='h-[100px] w-2.5 rounded-xl bg-[#172748]'></div>
                     <div>
@@ -32,7 +32,7 @@ const Maintenance = () => {
                         <p className='text-xl text-[#9C9C9C]'>ASE-certified professionals</p>
                     </div>
                 </div>
-                <div>
+                <div className='flex justify-center md:justify-start'>
                     <button onClick={openModal} className='common-btn mt-10'> Book Appointment</button>
                 </div>
             </div>

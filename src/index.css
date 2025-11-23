@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -15,6 +15,14 @@ body{
     --color-black-base: #585858;
     --color-red-primary: #E63946;
     --color-red-secondary: #E63946;
+}
+.rancho{
+  font-family: "Rancho", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.my-text {
+    text-shadow: 2px 2px 4px rgba(51, 26, 21, 1);
 }
 
 .common-btn{

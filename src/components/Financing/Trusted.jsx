@@ -8,9 +8,9 @@ import partner4 from '../../assets/images/partner2.png';
 const Trusted = () => {
     return (
         <div className='my-30'>
-            <h1 className='text-5xl font-bold text-black-accent'>Trusted Financing Partners</h1>
-            <p className='text-2xl text-black-base mt-4'>We’ve partnered with top automotive financing providers for quick approvals and flexible terms.</p>
-            <div className='my-15 grid grid-cols-5 gap-6'>
+            <h1 className='md:text-5xl text-3xl text-center md:text-start font-bold text-black-accent'>Trusted Financing Partners</h1>
+            <p className='md:text-2xl text-lg text-center md:text-start text-black-base mt-4'>We’ve partnered with top automotive financing providers for quick approvals and flexible terms.</p>
+            <div className='my-15 grid md:grid-cols-2 lg:grid-cols-5 gap-6'>
                 <div className='flex items-center justify-center bg-[#F8F8F8] rounded-xl'>
                     <img src={partner} alt="" />
                 </div>

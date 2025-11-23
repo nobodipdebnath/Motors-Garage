@@ -20,7 +20,7 @@ export const ModalProvider = ({ children }) => {
           onClick={closeModal}
         >
           <div
-            className="bg-white max-h-[90vh] overflow-y-auto p-8 rounded-xl shadow-xl w-1/2"
+            className="bg-white max-h-[90vh] overflow-y-auto p-8 rounded-xl shadow-xl lg:w-1/2 w-[90%]"
             onClick={(e) => e.stopPropagation()}
             >
             <div>
@@ -33,7 +33,7 @@ export const ModalProvider = ({ children }) => {
                     <label className="text-base text-black-accent">Name</label>
                     <input className="py-4 px-4 bg-[#e9e6e6bf] outline-red-secondary rounded-lg" type="text" name="name" required placeholder="Enter Your Name" />
                 </div>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid md:grid-cols-2 gap-4">
                     <div className="flex flex-col gap-3">
                         <label className="text-base text-black-accent">Phone Number</label>
                         <input className="py-4 outline-red-secondary px-4 bg-[#e9e6e6bf] rounded-lg" type="text" required name="number" placeholder="Enter Your Phone Number" />
@@ -45,7 +45,7 @@ export const ModalProvider = ({ children }) => {
                 </div>
                 <div>
                     <h4 className="text-base text-black-accent">Vehicle Details</h4>
-                    <div className="grid grid-cols-3 gap-4 mt-4">
+                    <div className="grid md:grid-cols-3 gap-4 mt-4">
                         <div className="flex flex-col gap-3">
                             <label className="text-base text-black-accent">Year</label>
                             <input className="py-4 outline-red-secondary px-4 bg-[#e9e6e6bf] rounded-lg" type="text" required name="number" placeholder="Enter Year" />
@@ -64,7 +64,7 @@ export const ModalProvider = ({ children }) => {
                     <label className="text-base text-black-accent">Select Service Type</label>
                     <input className="py-4 outline-red-secondary px-4 bg-[#e9e6e6bf] rounded-lg" type="text" required name="number" placeholder="Select Service Type" />
                 </div>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid md:grid-cols-2 gap-4">
                     <div className="flex flex-col gap-3">
                         <label className="text-base text-black-accent">Preferred Date</label>
                         <input className="py-4 w-full outline-red-secondary px-4 bg-[#e9e6e6bf] rounded-lg" type="text" required name="number" placeholder="Preferred Date" />

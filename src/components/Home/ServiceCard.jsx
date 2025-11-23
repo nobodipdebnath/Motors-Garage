@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 const ServiceCard = ({service}) => {
     const{id,image, svg, title, description} = service;
     return (
-        <div className='p-6 border border-gray-200 rounded-2xl'>
+        <div className='md:p-6 p-3 border border-gray-200 rounded-2xl'>
             <img className='w-full h-[325px] rounded-xl object-cover' src={image} alt={title} />
             <img className='my-5 p-2.5 h-12 w-12 bg-[#1A1A1A1A] rounded-lg' src={svg} alt="not found" />
             <div className='h-[1px] bg-gray-300'></div>

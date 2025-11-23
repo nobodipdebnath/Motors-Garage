@@ -20,7 +20,7 @@ const BodyServices = () => {
     const firstPaint = bodyPaints.slice(0, 7);
     const secondPaint = bodyPaints.slice(7, 11);
     return (
-        <div className='p-10 rounded-2xl bg-[#1A1A1A08]'>
+        <div className='md:p-10 p-4 rounded-2xl bg-[#1A1A1A08]'>
             <h1 className='text-5xl text-black-accent font-bold'>Paint & Body Service  </h1>
             <p className='text-xl text-black-base mt-4.5'>From small scratches to major collision damage, our expert technicians restore your car’s body and paintwork to perfection. We use advanced color-matching technology and high-quality materials to make your vehicle look brand new again.</p>
             <div className='mt-8'>

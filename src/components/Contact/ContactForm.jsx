@@ -35,9 +35,9 @@ const ContactForm = () => {
                 </div>
             </div>
             <div>
-                <h1 className='text-4xl text-black-accent font-bold'>Contact form</h1>
+                <h1 className='text-4xl text-black-accent font-bold text-center md:text-start'>Contact form</h1>
                 <form onSubmit={handelSubmit} className='mt-8 flex flex-col gap-6'>
-                    <div className='grid grid-cols-2 gap-4'>
+                    <div className='grid md:grid-cols-2 gap-4'>
                         <div className='flex flex-col gap-4'>
                             <label className='text-base text-black'>First Name</label>
                             <input className='py-4 px-4 outline-red-secondary bg-[#F9F9F9] w-full rounded-lg' required type="text" name="name" placeholder='Enter Your First Name'/>
