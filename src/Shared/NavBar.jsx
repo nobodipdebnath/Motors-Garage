@@ -9,6 +9,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { openModal } = useModal();
 
+
   return (
     <>
       <nav className="text-white relative">

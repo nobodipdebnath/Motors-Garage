@@ -20,15 +20,17 @@ const LearnMorePage = () => {
             <div className='w-11/12 mx-auto py-10'>
                 {
                     service ? (
-                        <div>
+                        <div className='flex flex-col lg:flex-row items-center gap-10'>
                             <img 
                                 src={service.image} 
                                 alt="" 
                                 className='rounded-xl mb-6'
                             />
-                            
-                            <h2 className='text-3xl font-bold'>{service.title}</h2>
-                            <p className='text-lg mt-3'>{service.description}</p>
+                            <div>
+                                <h2 className='text-3xl font-bold'>{service.title}</h2>
+                                <p className='text-lg mt-3'>{service.description}</p>
+                                <p className='text-lg my-text mt-3 rancho'>{service.text}</p>
+                            </div>
                         </div>
                     ) : (
                         <p className='text-center text-xl'>Loading...</p>
